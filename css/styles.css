@@ -71,6 +71,19 @@ img {
   margin-right: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Компонентные элементы */
 .logo {
   font-family: var(--secondary-font-family);
@@ -187,6 +200,7 @@ img {
 .hero-btn {
   min-width: 200px;
   padding: 10px 25px;
+  /* display: inline-block; */
 
   border-radius: 4px;
   font-family: inherit;
@@ -359,7 +373,23 @@ img {
   border-top: none;
   padding: 20px 24px;
 }
+.portfolio-nav-btn.one {
+  min-width: 72px;
+}
+.portfolio-nav-btn.two {
+  min-width: 128px;
+}
+.portfolio-nav-btn.three {
+  min-width: 144px;
+}
+.portfolio-nav-btn.four {
+  min-width: 102px;
+}
+.portfolio-nav-btn.five {
+  min-width: 130px;
+}
 .portfolio-nav-btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -368,6 +398,9 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--primary-text-color);
+  /* border: transparent; */
+  border: none;
+  border-radius: 4px;
 }
 .portfolio-nav-btn:hover,
 .portfolio-nav-btn:focus {
