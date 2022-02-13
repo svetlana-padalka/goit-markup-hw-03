@@ -23,135 +23,168 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <nav class="nav">
-        <a class="logo link" href="" lang="en"
-          ><span class="accent-logo">Web</span><span class="header-logo">Studio</span></a
-        >
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="logo link" href="" lang="en"
+            ><span class="accent-logo">Web</span><span class="header-logo">Studio</span></a
+          >
 
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a class="nav-list-link link" href="./index.html">Студия</a>
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link current" href="">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts-list">
+            <a class="contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link link current" href="">Портфолио</a>
-          </li>
-          <li class="nav-list-item">
-            <a class="nav-list-link link" href="">Контакты</a>
+          <li class="contacts-list">
+            <a class="contacts-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="contacts list">
-        <li class="contacts-list">
-          <a class="contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="contacts-list">
-          <a class="contacts-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
+    <!-- Наши работы -->
     <main>
-      <!-- Наши работы -->
-      <section class="portfolio">
-        <h1 hidden class="portfolio-title">Наши работы</h1>
-        <ul class="portfolio-nav-list list">
-          <li class="portfolio-nav-item">
-            <button class="portfolio-nav-btn" type="button">Все</button>
-          </li>
-          <li class="portfolio-nav-item">
-            <button class="portfolio-nav-btn" type="button">Веб-сайты</button>
-          </li>
-          <li class="portfolio-nav-item">
-            <button class="portfolio-nav-btn" type="button">Приложения</button>
-          </li>
-          <li class="portfolio-nav-item">
-            <button class="portfolio-nav-btn" type="button">Дизайн</button>
-          </li>
-          <li class="portfolio-nav-item">
-            <button class="portfolio-nav-btn" type="button">Маркетинг</button>
-          </li>
-        </ul>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 hidden class="portfolio-title">Наши работы</h1>
+          <ul class="portfolio-nav-list list">
+            <li class="portfolio-nav-item">
+              <button class="portfolio-nav-btn" type="button">Все</button>
+            </li>
+            <li class="portfolio-nav-item">
+              <button class="portfolio-nav-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio-nav-item">
+              <button class="portfolio-nav-btn" type="button">Приложения</button>
+            </li>
+            <li class="portfolio-nav-item">
+              <button class="portfolio-nav-btn" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio-nav-item">
+              <button class="portfolio-nav-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
 
-        <ul class="portfolio-list list">
-          <li class="portfolio-card">
-            <img src="./images/portfolio-1.jpg" alt="Экран ноутбука" width="370" />
-            <h2 class="portfolio-card-title">Технокряк</h2>
-            <p class="portfolio-card-text">Веб-сайт</p>
-          </li>
+          <ul class="portfolio-list list">
+            <li class="portfolio-card">
+              <img src="./images/portfolio-1.jpg" alt="Экран ноутбука" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">Технокряк</h2>
+                <p class="portfolio-card-text">Веб-сайт</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-2.jpg" alt="Двое парней играют в баскетбол" width="370" />
-            <h2 class="portfolio-card-title">
-              Постер<span lang="en">New Orlean vs Golden Star</span>
-            </h2>
-            <p class="portfolio-card-text">Дизайн</p>
-          </li>
+            <li class="portfolio-card">
+              <img
+                src="./images/portfolio-2.jpg"
+                alt="Двое парней играют в баскетбол"
+                width="370"
+              />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">
+                  Постер<span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="portfolio-card-text">Дизайн</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-3.jpg" alt="Название ресторана на фоне рыбы" width="370" />
-            <h2 class="portfolio-card-title">Ресторан<span lang="en">Seafood</span></h2>
-            <p class="portfolio-card-text">Приложение</p>
-          </li>
+            <li class="portfolio-card">
+              <img
+                src="./images/portfolio-3.jpg"
+                alt="Название ресторана на фоне рыбы"
+                width="370"
+              />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">Ресторан<span lang="en">Seafood</span></h2>
+                <p class="portfolio-card-text">Приложение</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-4.jpg" alt="Черные наушники" width="370" />
-            <h2 class="portfolio-card-title">Проект<span lang="en">Prime</span></h2>
-            <p class="portfolio-card-text">Маркетинг</p>
-          </li>
+            <li class="portfolio-card">
+              <img src="./images/portfolio-4.jpg" alt="Черные наушники" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">Проект<span lang="en">Prime</span></h2>
+                <p class="portfolio-card-text">Маркетинг</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-5.jpg" alt="Две коробочки" width="370" />
-            <h2 class="portfolio-card-title">Проект<span lang="en">Boxes</span></h2>
-            <p class="portfolio-card-text">Приложение</p>
-          </li>
+            <li class="portfolio-card">
+              <img src="./images/portfolio-5.jpg" alt="Две коробочки" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">Проект<span lang="en">Boxes</span></h2>
+                <p class="portfolio-card-text">Приложение</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-6.jpg" alt="Монитор компьютера" width="370" />
-            <h2 class="portfolio-card-title" lang="en">Inspiration has no Borders</h2>
-            <p class="portfolio-card-text">Веб-сайт</p>
-          </li>
+            <li class="portfolio-card">
+              <img src="./images/portfolio-6.jpg" alt="Монитор компьютера" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title" lang="en">Inspiration has no Borders</h2>
+                <p class="portfolio-card-text">Веб-сайт</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-7.jpg" alt="Разворот журнала" width="370" />
-            <h2 class="portfolio-card-title">Издание<span lang="en">Limited Edition</span></h2>
-            <p class="portfolio-card-text">Дизайн</p>
-          </li>
+            <li class="portfolio-card">
+              <img src="./images/portfolio-7.jpg" alt="Разворот журнала" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">Издание<span lang="en">Limited Edition</span></h2>
+                <p class="portfolio-card-text">Дизайн</p>
+              </div>
+            </li>
 
-          <li class="portfolio-card">
-            <img src="./images/portfolio-8.jpg" alt="Дизайн этикетки" width="370" />
-            <h2 class="portfolio-card-title">Проект<span lang="en">LAB</span></h2>
-            <p class="portfolio-card-text">Маркетинг</p>
-          </li>
-          <li class="portfolio-card">
-            <img src="./images/portfolio-9.jpg" alt="Работа за ноутбуком" width="370" />
-            <h2 class="portfolio-card-title" lang="en">Growing Business</h2>
-            <p class="portfolio-card-text">Приложение</p>
-          </li>
-        </ul>
+            <li class="portfolio-card">
+              <img src="./images/portfolio-8.jpg" alt="Дизайн этикетки" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title">Проект<span lang="en">LAB</span></h2>
+                <p class="portfolio-card-text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="portfolio-card">
+              <img src="./images/portfolio-9.jpg" alt="Работа за ноутбуком" width="370" />
+              <div class="portfolio-content-wrapper">
+                <h2 class="portfolio-card-title" lang="en">Growing Business</h2>
+                <p class="portfolio-card-text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="footer">
-      <a class="logo link" href="" lang="en"
-        ><span class="accent-logo">Web</span><span class="footer-logo">Studio</span></a
-      >
-      <address>
-        <ul class="contact-list list">
-          <li class="contact-list-item">
-            <a class="contact-list-link address link" href="">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <li class="contact-list-item">
-            <a class="contact-list-link mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-list-item">
-            <a class="contact-list-link phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo link" href="" lang="en"
+          ><span class="accent-logo">Web</span><span class="footer-logo">Studio</span></a
+        >
+        <address class="footer-address">
+          <ul class="contact-list list">
+            <li class="contact-list-item">
+              <a class="contact-list-link address link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="contact-list-item">
+              <a class="contact-list-link mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-list-item">
+              <a class="contact-list-link phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
